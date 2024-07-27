@@ -1,0 +1,4 @@
+name: k_kill
+version: '${version}'
+main: org.example.helloworld.k_kill.K_kill
+api-version: '1.20'
