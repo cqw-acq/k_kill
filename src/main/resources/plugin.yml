@@ -1,4 +1,7 @@
-name: k_kill
-version: '${version}'
-main: org.example.helloworld.k_kill.K_kill
-api-version: '1.20'
+name: SuicidePlugin
+version: 1.0
+main: com.example.suicideplugin.Main
+commands:
+  k:
+    description: 使玩家自杀
+    usage: /k
