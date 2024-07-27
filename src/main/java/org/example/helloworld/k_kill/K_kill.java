@@ -19,4 +19,19 @@ public final class K_kill extends JavaPlugin {
     public void onDisable() {
         // Plugin shutdown logic
     }
+
+    public class SuicideCommand implements CommandExecutor {
+        @Override
+        public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
+            if (sender instanceof Player) {
+                Player player = (Player) sender;
+                player.setHealth(0.0);
+                player.sendMessage(ChatColor.RED + "你自杀了。");
+                return true;
+            } else {
+                sender.sendMessage("这个命令只能由玩家执行。");
+                return false;
+            }
+        }
+    }
 }
