@@ -1,13 +1,13 @@
-package org.example.helloworld.k_kill;
+package org.example.k_kill;
+
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
-import org.bukkit.command.CommandSender;
 import org.bukkit.command.CommandExecutor;
+import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
-import org.bukkit.plugin.java.JavaPlugin;
 
-public final class K_kill extends JavaPlugin {
+public class K_kill extends JavaPlugin {
 
     @Override
     public void onEnable() {
@@ -17,7 +17,7 @@ public final class K_kill extends JavaPlugin {
 
     @Override
     public void onDisable() {
-        // Plugin shutdown logic
+        // 在插件禁用时执行逻辑
     }
 
     public class SuicideCommand implements CommandExecutor {
